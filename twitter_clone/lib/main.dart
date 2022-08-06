@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:twitter_clone/screens/signin_screen.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    child: MyApp()
+  ));
 }
 
 class MyApp extends StatelessWidget {
